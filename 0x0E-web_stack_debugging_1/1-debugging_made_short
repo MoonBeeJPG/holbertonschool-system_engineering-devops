@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Using what you did for task #0, make your fix short and sweet
-sed -i "s/listen 8080;\nlisten \[::\]:8080;/listen 80;\nlisten \[::\]:80/" /etc/nginx/sites-enabled/default
+sed -i "s/listen 8080;\nlisten \[::\]:8080;/listen 80;\nlisten \[::\]:80;" /etc/nginx/sites-enabled/default
 service nginx restart
 service nginx stop
