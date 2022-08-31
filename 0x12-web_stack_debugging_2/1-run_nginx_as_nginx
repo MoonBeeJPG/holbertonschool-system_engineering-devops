@@ -5,4 +5,4 @@ sudo apt-get -y install nginx
 sed -i "s/listen 80/listen 8080/" /etc/nginx/sites-enabled/default
 sudo chmod 644 /etc/nginx/nginx.conf
 sudo chown nginx:nginx /etc/nginx/nginx.conf
-sudo -u service nginx start
+sudo service nginx restart
