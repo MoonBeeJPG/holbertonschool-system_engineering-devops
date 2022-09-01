@@ -2,6 +2,6 @@
 # comment
 sudo pkill -f apache2
 sudo chmod 644 /etc/nginx/nginx.conf
-sed -i "s/listen 80/listen 8080/" /etc/nginx/sites-enabled/default
+sudo sed -i "s/listen 80/listen 8080/" /etc/nginx/sites-enabled/default
 sudo chown nginx:nginx /etc/nginx/nginx.conf
 sudo -u nginx service nginx start
