@@ -19,4 +19,4 @@ if __name__ == '__main__':
             TASK_COMPLETED_STATUS = i.get("completed")
             TASK_TITLE = i.get("title")
             MyFile.write('"{}","{}","{}","{}"\n'.format(
-					us_id, EMPLOYEE_NAME, TASK_COMPLETED_STATUS, TASK_TITLE))
+                    us_id, EMPLOYEE_NAME, TASK_COMPLETED_STATUS, TASK_TITLE))
