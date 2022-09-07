@@ -10,9 +10,9 @@ if __name__ == "__main__":
     url1 = "https://jsonplaceholder.typicode.com/users/{}".format(argv[1])
     url2 = "https://jsonplaceholder.typicode.com/todos?userId={}".format(argv[1])
 
-    name_resp = request.get(url1).json()
+    name_resp = requests.get(url1).json()
     EMPLOYEE_NAME = name_resp.get('name')
-    tasks_resp = request.get(url2).json()
+    tasks_resp = requests.get(url2).json()
     TOTAL_NUMBER_OF_TASKS = len(tasks_resp)
     NUMBER_OF_DONE_TASKS = 0
     directory = []
